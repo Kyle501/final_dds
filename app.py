@@ -5,6 +5,7 @@ import pandas as pd
 import plotly.express as px
 
 # Initialize Dash app
+server = app.server
 app = dash.Dash(__name__)
 app.title = "Manager Dashboard"
 db_path = "final_dds.db"
@@ -392,4 +393,4 @@ def update_charts(selected_states, selected_quarters, selected_products):
 
 # Run the app
 if __name__ == "__main__":
-    app.run_server(debug=True)
+    app.run(debug=True)
