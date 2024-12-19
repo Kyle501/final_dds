@@ -1,5 +1,4 @@
 dash
-sqlite3
 pandas
 plotly
 gunicorn
