@@ -4,9 +4,10 @@ import sqlite3
 import pandas as pd
 import plotly.express as px
 
+app = dash.Dash(__name__)
 # Initialize Dash app
 server = app.server
-app = dash.Dash(__name__)
+
 app.title = "Manager Dashboard"
 db_path = "final_dds.db"
 
